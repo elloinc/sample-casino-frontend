@@ -4,6 +4,9 @@ import App from './App';
 import * as serviceWorker from './serviceWorker';
 import { Router } from 'react-router-dom';
 import { history } from 'Services/History';
+import { createRequire } from 'module';
+
+const require = createRequire(import.meta.url);
 
 ReactDOM.render(
   <Router history={history}>

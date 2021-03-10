@@ -1,6 +1,9 @@
 import React, { useEffect } from 'react';
 import 'slick-carousel/slick/slick-theme.css';
 import 'slick-carousel/slick/slick.css';
+import { createRequire } from 'module';
+
+const require = createRequire(import.meta.url);
 
 const Wheel = (BaseComponent) => {
   const wrapperRef = React.createRef();
